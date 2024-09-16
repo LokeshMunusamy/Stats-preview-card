@@ -1,0 +1,114 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body{
+
+  font-family: "Inter", sans-serif;
+  /* font-optical-sizing: auto; */
+  Font-size: 15px;
+  font-weight: weight;
+  font-style: normal;
+  background-color: hsl(233, 47%, 7%);
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+    /* margin-left: 17%; */
+    min-width: 1104px;
+    /* align-items: center; */
+}
+.container{
+    width: 75%;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    /* align-items: center; */
+    /* justify-content: center;  */
+}
+.contant{
+    width: 50%;
+}
+.cont-img{
+    background-image: url("images/image-header-desktop.jpg");
+    width: 50%;
+    /* height: 65vh; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.cont-img::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: hsl(277, 64%, 61%);
+    opacity: 0.5;
+}
+h1,h2{
+    color: hsl(0, 0%, 100%);
+}
+h2{
+    margin-bottom: 8px;
+}
+.rating p{
+    margin: 0;
+}
+
+span{
+    color: hsl(277, 64%, 61%);
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.contant{
+    box-sizing: border-box;
+    padding: 3rem;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* media query */
+@media(max-width:475px){
+    .main-container{
+        min-width: 360px;
+    }
+    .container{
+        width: 85%;
+        background-color: hsl(244, 38%, 16%);
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .cont-img{
+        width: 100%;
+        background-image: url(images/image-header-mobile.jpg);  
+        background-size: cover;
+        height: 40vh;
+    }
+    .contant{
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+    }
+    .rating{
+        display: flex;
+        flex-direction: column;
+    } 
+    /* p{
+        line-height: 1.5px; 
+    }  */
+     .heading-title p{
+        line-height: 2;
+        padding: 1em;
+     }
+}
